@@ -1,0 +1,6 @@
+from math import sqrt
+cateto1 = 10.123
+cateto2 = 30.456
+
+ipotenusa = sqrt(cateto1**2 + cateto2**2)
+print (ipotenusa) 
