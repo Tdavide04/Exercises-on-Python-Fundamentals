@@ -7,7 +7,7 @@ import random  #importo random
 
 lista = [] #creo la lista
 for i in range (101): #creo un ciclo for generando un centinaio di numeri
-    lista_random = random.randint (1, 10) #genero una lista di numeri casuali tra 1 e 10
+    lista_random = random.randint (1, 10) #genero una lista di numeri casuali tra 1 e 10 #randint è l'uncio che include l'estremo destro 
     lista.append(lista_random) #aggiungo i numeri casuali alla lista creata 
 somma = sum(lista) #faccio la somma
 print(somma)
