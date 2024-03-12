@@ -134,4 +134,4 @@ def StringDigitsToList(sd):
     return lista
 
 
-print(StringDigitsToList(9563))
+print(StringDigitsToList("9563"))
