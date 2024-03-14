@@ -117,10 +117,10 @@ def GeneraListaDigit():
     lista = []
     for i in range(0, 10000):
         s = str(i)
-        while len(s) < 4:
-            s = "0" + s
-        lista.append(s)
-    return lista
+        while len(s) < 4:        #si può usare anche la funzione z.fill(4) 
+            s = "0" + s          #che immplementa abbasta zeri a sinistra fino ad avere un numero
+        lista.append(s)          #grande quanto il numero nelle parentesi
+    return lista 
 
 print(GeneraListaDigit())
 '''
