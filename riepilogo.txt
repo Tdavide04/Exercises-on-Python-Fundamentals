@@ -48,4 +48,3 @@
     - per ogni calciatore:
       - inserisco il nome del calciatore nell'elenco
     - Al termine elimino i doppioni dall'elenco e ottengo "Unici"
-    
