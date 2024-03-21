@@ -78,13 +78,29 @@ for player in worldcup:
 print("il numeri di giocatori che hanno giocato sia in Italia che in Argentina è: ", giocatori_Italia_Argentina)
 
 # 6) Trovare qual'è il calciatore più giovane che ha partecipato alla coppa del mondo
-giocatore_piu_giovane = {}
+calciatore_piu_giovane = ""
+eta_piu_giovane = 200
 for player in worldcup:
-    Cup = player.get("Year")
-    Year = player.get("DateOfBirth")
-    year = int(Year[0:4])
-print(year)
+    campionato = player["Year"]
+    data_di_nascita = player['DateOfBirth']
+    if data_di_nascita:
+        anno_di_nascita = int(data_di_nascita.split('-')[0])
+        eta = campionato - anno_di_nascita
+
+        if eta < eta_piu_giovane:
+            eta_piu_giovane = eta
+            calciatore_piu_giovane = player['FullName']
+print("Il calciatore più giovane è:", calciatore_piu_giovane)
+
 # 7) Trovare qual'è il calciatore più anziano che ha partecipato alla coppa del mondo
+calciatore_piu_anziano = ""
+eta_piu_anziano = 200
+
+if eta > eta_piu_anziano:
+            eta_piu_anziano = eta
+            calciatore_piu_giovane = player['FullName']
+print("Il calciatore più giovane è:", calciatore_piu_anziano)
+
 
 # 8) Trovare quale calciatore ha partecipato a più edizioni della coppa del mondo
 partecipazioni_giocatori = {}
@@ -94,10 +110,7 @@ for player in worldcup:
         partecipazioni_giocatori[full_name] = partecipazioni_giocatori.get(full_name, 0) + 1
 giocatore_piu_frequente = max(partecipazioni_giocatori, key=partecipazioni_giocatori.get)
 
-print("Il giocatore che ha partecipato al maggior numero di edizioni della Coppa del Mondo fino a questo punto è: ", giocatore_piu_frequente)
+print("Il giocatore che ha partecipato al maggior numero di edizioni della Coppa del Mondo è: ", giocatore_piu_frequente)
 
 # 9) Trovare quale squadra di calcio ha fornito più calciatori per la coppa del mondo
 #    Organizzare per nazione. Cioè quale squadra italiana ha fornito più calciatori per la coppa del mondo e quanti, quale squadra francese, ...
-
-
-
