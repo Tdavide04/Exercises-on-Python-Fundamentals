@@ -1,4 +1,0 @@
-Mario,Rossi,35
-Giulio,Bianchi,27
-Pier Silvio,Berlu Sconi,45
-Donald,Trump 4,70
