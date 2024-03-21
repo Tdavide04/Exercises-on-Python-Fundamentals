@@ -1,0 +1,50 @@
+- simboli:
+  - è una sequenza di caratteri e numeri, che può iniziare per _
+  - A un simbolo posso associare un qualsiasi tipo di dati, scalare o strutturato o funzione
+  - Ci sono simboli che sono operatori di Python:
+    - NB: simboli tipo "print" non sono operatori du py ma sono funzioni!
+    - Operatori di py sono "for, if, else, range, ..."
+
+- Tipi di dati
+  -Numeri (interi e float), stringhe ("bfsdvuobfuobfio"), booleani (True/False)
+
+- Tipi di dati strutturati (set, lista, dict, tupla)
+  - Collezioni omogenee o eterogenee di dati scalari e strutturati
+
+- Data una lista di numeri, calcolare la somma degli elementi della lista
+  - simboli essenziale:
+    - lista
+    - totale
+  - per ogni elemento della lista, lo aggiungo al totale
+    - tradotto in py, devo scandire uno per uno, gli elementi di una lista e sommati a una variabile "totale"
+
+- quindi gli step per scrivere un programma sono:
+  - comprendere il problema
+    - cosa devo fare?
+    - ci sono punti non chiari?
+      - chiedere spiegazioni
+  - Definire/approcciare una soluzione
+    - come devo fare?
+  - Progetto del software
+    - individuo variabili e funzioni che dovrò utilizzare
+  - progetto dei dati
+    - definisco in che modo i dati sono stati organizzati
+  - Traduzione nel liguaggio di programmazione scelto
+
+- A partire dai dati di partecipazione ai campionati di calcio del mondo, 
+  calcolare quanti calciatori hanno giocato per l'italia
+    - Analisi dei dati:
+      - devo comprendere come sono organizzati i dati
+      - devo capire in ce modo ho bisogno che questi siano organizzati 
+        per risolvere il mio problema
+      - devo capire se devo "organizzare i dati" prima di iniziare con
+        la soluzione del problema
+    - nel nostro caso è semplice poichè i dati sono in formato
+      "JSON", organizzati calciatore per calciatore. è cioe una sequenza
+      di calciatori descritti per nome, anno, team di appartenenza...
+    - progetto del software:
+      - elenco: elenco dei nome dei calciatori il cui Team è italia
+      - Unici: elenco senza ripetizioni dei nomi dei calciatori
+    - per ogni calciatore:
+      - inserisco il nome del calciatore nell'elenco
+    - Al termine elimino i doppioni dall'elenco e ottengo "Unici"
